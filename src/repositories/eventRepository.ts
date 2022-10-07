@@ -6,3 +6,11 @@ export async function createEvent(event: CreateEventDataProcessed) {
     data: event
   });
 }
+
+export async function getEventById(id: string) {
+  return await prisma.event.findFirst({
+    where: {
+      nanoid: id
+    }
+  });
+}

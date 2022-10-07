@@ -6,5 +6,6 @@ import { eventSchema } from "../schemas/eventSchema.js";
 const eventRouter = Router();
 
 eventRouter.post("/create", validateSchemaMiddleware(eventSchema), eventController.createEvent);
+eventRouter.get("/events/:id", eventController.getEventById);
 
 export default eventRouter;

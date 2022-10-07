@@ -7,8 +7,16 @@ async function createEvent(req: Request, res: Response) {
   res.status(201).send(id);
 }
 
+async function getEventById(req: Request, res: Response) {
+  const id = String(req.params.id);
+  const result = await eventService.getEventById(id);
+  res.status(200).send(result);
+}
+
+
 const eventController = {
-  createEvent
+  createEvent,
+  getEventById
 }
 
 export default eventController;

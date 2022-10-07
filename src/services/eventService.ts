@@ -14,8 +14,16 @@ async function createEvent(event: CreateEventData) {
   return generatedNanoid;
 }
 
+async function getEventById(id: string) {
+  const result = await eventRepository.getEventById(id);
+  if (!result) throw errors.notFoundError('Event not found');
+  return result;
+}
+
+
 const eventService = {
-  createEvent
+  createEvent,
+  getEventById
 }
 
 export default eventService;
