@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "b1a7ab65-0503-475a-b8b9-7b8368d9e3c8",
+    "colId": "3ca7ce4d-70c6-45d2-90e9-cffdb51b0d59",
+    "containerId": "",
+    "name": "POST /create",
+    "url": "http://localhost:4001/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-10-07T00:19:08.494Z",
+    "modified": "2022-10-07T00:20:04.919Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"title\": \"Joi.string().required()\",\r\n  \"host\": \"Joi.string().required()\",\r\n  \"dateTime\": \"Joi.string().required()\",\r\n  \"location\": \"Joi.string().required()\",\r\n  \"description\": \"Joi.string().required()\"\r\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

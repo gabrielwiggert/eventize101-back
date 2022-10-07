@@ -3,8 +3,8 @@ import eventService from "../services/eventService.js";
 
 async function createEvent(req: Request, res: Response) {
   const event = req.body;
-  await eventService.createEvent(event);
-  res.sendStatus(201);
+  const id = await eventService.createEvent(event);
+  res.status(201).send(id);
 }
 
 const eventController = {
