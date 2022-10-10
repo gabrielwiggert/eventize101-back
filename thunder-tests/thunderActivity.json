@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-10-07T00:20:08.064Z",
-    "modified": "2022-10-07T05:01:08.190Z",
+    "modified": "2022-10-10T19:15:36.139Z",
     "headers": [],
     "params": [],
     "body": {
@@ -79,11 +79,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:4001/events/rfbAWMJXTR9oUS69LXzmm",
-    "url": "http://localhost:4001/events/rfbAWMJXTR9oUS69LXzmm",
+    "url": "http://localhost:4001/events/mV3KdH77kYBZG3bz5bUFp",
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-07T05:01:23.754Z",
-    "modified": "2022-10-07T05:24:10.531Z",
+    "modified": "2022-10-10T19:20:21.533Z",
     "headers": [],
     "params": [],
     "tests": []
