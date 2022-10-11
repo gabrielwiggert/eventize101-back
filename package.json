@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "dotenv -e .env.test prisma migrate dev && dotenv -e .env.test prisma db seed && dotenv -e .env.test jest",
-    "start": "node src/server.ts",
+    "start_prev": "node src/server.ts",
+    "build": "tsc",
+	  "start": "node dist/app.js",
     "dev": "nodemon src/server.ts",
     "test_original_db": "jest --no-cache"
   },
