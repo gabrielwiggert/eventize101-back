@@ -1,3 +1,5 @@
+DEPLOY: https://eventize101.herokuapp.com/
+
 commands to be run on the project's root:
 (1) npm i (to install project's dependencies);
 (2) "sudo service postgresql start" (to start PostgreSQL database);
