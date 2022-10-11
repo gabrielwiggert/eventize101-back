@@ -20,8 +20,8 @@ export async function ensureAuthenticatedMiddleware(
   try {
     const JWT_SECRET = process.env.JWT_SECRET;
     const { userId } = jwt.verify(token, JWT_SECRET) as { userId: number };
-    const user = await userService.findUserById(userId);
-    res.locals.user = user;
+    /* const user = await userService.findUserById(userId);
+    res.locals.user = user; */
     next();
   } catch {
     throw unauthorizedError('Invalid token');
